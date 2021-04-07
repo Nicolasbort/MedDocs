@@ -2,6 +2,7 @@
 
   <Navbar />
   
+  <!-- <LoginPage /> -->
 
   <div class="container my-4">
     <h2>Todos os Exames</h2>
@@ -22,20 +23,27 @@ import SearchBar from './components/SearchBar'
 import Navbar from './components/Navbar'
 import ExameCard from './components/ExameCard'
 import AddExameCard from './components/AddExameCard'
+// import LoginPage from './components/login/Login'
+
 
 export default {
   name: 'App',
+
   data() {
     return {
-      amountExames: 4
+      amountExames: 4,
+      emptyData: ""
     }
   },
+
   components: {
     SearchBar,
     Navbar,
     ExameCard,
-    AddExameCard
-  }
+    AddExameCard,
+    // LoginPage
+  },
+
 }
 </script>
 

@@ -1,0 +1,49 @@
+{
+    "usuarios": {
+      "usuario01":{
+        "email":  "usuario@email.com",
+        "senha":  "123",
+        "acessosRef": [
+          "acesso01"
+        ]
+      }
+    },
+    "pacientes": {
+      "paciente01": {
+        "email":  "paciente@email.com",
+        "senha":  "123",
+        "exames": {
+            "exame01":{
+              "titulo": "Raio X da Cabeça",
+              "data":   "01/01/2001",
+              "tags":   ["Raio X", "PDF"]
+            }
+          }
+        ,
+        "acessosRef": [
+          "acesso01"
+        ]
+      },
+      "paciente02": {
+        "email":  "paciente2@email.com",
+        "senha":  "123",
+        "exames": {
+            "exame01":{
+              "titulo": "Ressonância Magnética do Pé",
+              "data":   "01/01/2001",
+              "tags":   ["Ressonância", "PNG"]
+            }
+          }
+        ,
+        "acessosRef": []
+      }
+    },
+    "acessos": {
+      "acesso01": {
+        "guidUsuario": "usuario01",
+        "guidPaciente": "paciente01",
+        "guidExame": "exame01"
+      }
+    }
+  }
+  
